@@ -1,0 +1,86 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 100px;
+  padding: 0;
+  background-color: lightpink;
+}
+/* pseudoelemento aplicado ao h1 adicionando conteúdo antes */
+h1::before{
+    content: "Tema: ";
+    font-weight: 900;
+    color: hotpink;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 125, 143);
+    margin: 2px;
+}
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(138, 22, 93);
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+nav ul li a:hover{
+    background-color: #dc143c85;
+}
+nav ul li a:active{
+    background-color: rgb(106, 6, 119);
+}
+nav ul li a:visited{
+    background-color: rgb(52, 3, 65);
+    color: rgb(174, 100, 243);
+}
+p::first-letter{
+    font-size: 1.5em;
+}
+footer{
+    text-align: center;
+    margin: 100px;
+}
+@media(max-width:320px){
+    .column{
+        flex: 1 1 100%;
+        background-color: blue;
+    }
+    .header{
+        color: blueviolet;
+        background-color: cadetblue;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    body{
+        margin: 50px;
+
+    }
+    .img{
+        width: 350px;
+    }
+}
+@media(max-width:480px){
+    .column{
+        flex: 1 1 100%;
+        /* background-color: darkred; */
+    }
+    .header h1{
+        font-size: 20px;}
+    
+        body{
+            margin:50px;
+        }
+       .img{
+        width: 350px;
+       }
+       footer{
+        margin: 10px;
+       }
+    }
